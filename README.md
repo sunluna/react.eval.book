@@ -105,7 +105,7 @@ export default AComponent;
 import { react } from 'react.eval';
 ```
 
-##### 需要被外部调用的组件必须在 constructor 中初始化或使用ES7的decorator标注.
+##### 需要被外部调用的组件必须在 constructor 中初始化或使用ES7的decorator标注
 
 ```
 react.init(this); 
