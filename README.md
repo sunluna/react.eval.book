@@ -125,7 +125,7 @@ react.init(this);
 <BComponent id="b"/>
 ```
 
-##### 调用已知id控件的方式
+##### 调用已知id控件的方式.
 
 ```
 react.eval('id.方法名',参数1,参数2...)
