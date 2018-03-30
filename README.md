@@ -142,7 +142,7 @@ A: 在应用了dva、redux 等框架的项目中，dispatch很容易造成大批
 
 在渲染过程中，react.eval 要执行的方法所在的组件实例
 
-1、有可能无法setState
+1、有可能处于不允许setState的生命周期
 
 2、控件本身可能不存在
 
