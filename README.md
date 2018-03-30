@@ -136,7 +136,7 @@ react.eval('id.方法名',参数1,参数2...)
 
 **react.eval 方法的返回值为 Promise对象，如果需要获取实际返回值，需要 react.eval\(...\).then\(\(result\)=&gt;{console.dir\(result\);}\)**
 
-Q: 为什么react.eval 返回Promise  而不是 实际返回值
+**Q: 为什么react.eval 返回Promise  而不是 实际返回值**
 
 A: 在应用了dva、redux 等框架的项目中，dispatch很容易造成大批组件重新渲染，
 
@@ -149,8 +149,6 @@ A: 在应用了dva、redux 等框架的项目中，dispatch很容易造成大批
 因此 react.eval 将会延迟到组件实例存在并且可以setState的时候执行。
 
 另外，如果控件的方法本身返回一个Promise\(嵌套\)，react.eval会一直等待最深层的Promise结束后才触发then下一步。
-
-
 
 ![](/assets/t.gif)
 
