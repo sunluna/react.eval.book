@@ -28,7 +28,7 @@ class BComponent extends React.Component {
     this.state = {
       content : 'nothing'
     };
-    /* 构造函数里初始化实例， 简化写法 react(this) ////^1.4.7
+    /* 构造方法里初始化实例， 简化写法 react(this) ////^1.4.7
     如果使用了ES7 decorators，就不用在constructor的最后init了
     装饰器和init任选一种，如果同时使用，则会抛出错误
       */
