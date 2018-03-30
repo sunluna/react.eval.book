@@ -174,5 +174,7 @@ let result=react.eval\(...\)**\(\)                                          //re
 
 ![](/assets/impaasddddort.png)
 
+![](/assets/impozzrt.png)
+
 
 
