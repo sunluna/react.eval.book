@@ -158,9 +158,11 @@ A:^1.4.8 版本后
 
 let result=react.eval\(...\)**\(\)                                          //react\(...\)\(\)**
 
-
-
 在eval方法后再加一对小括号，就可以立刻返回未经处理的方法返回值，不必使用then取得Promise的返回结果
+
+```
+ let result= react('b.changeContent','......')();
+```
 
 ![](/assets/t.gif)
 
