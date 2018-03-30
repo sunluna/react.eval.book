@@ -99,6 +99,8 @@ class AComponent extends React.Component {
 export default AComponent;
 ```
 
+##### ![](/assets/t.gif)
+
 ##### 调用或初始化前需要添加引用
 
 ```
@@ -164,5 +166,7 @@ let result=react.eval\(...\)**\(\)                                          //re
  let result= react('b.changeContent','......')();
 ```
 
-![](/assets/t.gif)
+
+
+
 
