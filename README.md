@@ -170,5 +170,9 @@ let result=react.eval\(...\)**\(\)                                          //re
 
 ![](/assets/imposrt.png)
 
-如果结果确实是延迟返回的，例如各种ajax
+如果结果确实是延迟返回的，例如各种ajax,还可以使用 await/async 改造调用的方法
+
+![](/assets/impaasddddort.png)
+
+
 
