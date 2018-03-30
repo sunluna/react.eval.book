@@ -18,8 +18,8 @@ import { react } from 'react.eval';
 
 /*
 如果安装了 babel-plugin-transform-decorators-legacy
- https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#readme
- 可以这样↓
+https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#readme
+可以这样↓
 */
 // @react.deco //// 简化写法 @react ////^1.4.7
 class BComponent extends React.Component {
