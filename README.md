@@ -166,7 +166,9 @@ let result=react.eval\(...\)**\(\)                                          //re
  let result= react('b.changeContent','......')();
 ```
 
+![](/assets/import.png)
 
+![](/assets/imposrt.png)
 
-
+如果结果确实是延迟返回的，例如各种ajax
 
