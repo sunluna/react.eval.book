@@ -148,7 +148,9 @@ A: 在应用了dva、redux 等框架的项目中，dispatch很容易造成大批
 
 因此 react.eval 将会延迟到组件实例存在并且可以setState的时候执行。
 
-另外，如果控件的方法本身返回一个Promise，react.eval会一直等待最深层的Promise结束后才触发then下一步。
+另外，如果控件的方法本身返回一个Promise\(嵌套\)，react.eval会一直等待最深层的Promise结束后才触发then下一步。
+
+
 
 ![](/assets/t.gif)
 
