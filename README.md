@@ -125,7 +125,7 @@ react.init(this);
 <BComponent id="b"/>
 ```
 
-##### 调用已知id控件的方式.
+##### 调用已知id组件的方式.
 
 ```
 react.eval('id.方法名',参数1,参数2...)
@@ -144,11 +144,11 @@ A: 在应用了dva、redux 等框架的项目中，dispatch很容易造成大批
 
 1、有可能处于不允许setState的生命周期
 
-2、控件本身可能不存在
+2、组件实例本身可能不存在
 
 因此 react.eval 将会延迟到组件实例存在并且可以setState的时候执行。
 
-另外，如果控件的方法本身返回一个Promise\(嵌套\)，react.eval会一直等待最深层的Promise结束后才触发then下一步。
+另外，如果组件的方法本身返回一个Promise\(嵌套\)，react.eval会一直等待最深层的Promise结束后才触发then下一步，类似ES7 await的等待效果。
 
 **Q:如果我要立刻获得组件方法的返回值，怎么做**
 
