@@ -1,6 +1,6 @@
 # react.eval
 
-## React 组件间通讯
+## React 组件间通讯\(不使用Context 和 redux\)
 
 ### **安装**
 
