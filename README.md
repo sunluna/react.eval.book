@@ -200,7 +200,7 @@ jquery，vue这些经典的东西，其生存哲学依然有可取之处，简�
 
 组件应当 为 程序员 服务，极少的配置获取尽可能多的功能。组件存在的目的是为了通过封装组合，尽最大可能不出bug，让经验得以积累，提高效率，降低成本。
 
-react.eval 的执行方式仿照easyui\(\([http://www.jeasyui.com](http://www.jeasyui.com%29%29\)
+react.eval 的执行方式仿照easyui\([http://www.jeasyui.com](http://www.jeasyui.com%29%29\)\)
 
 存在的目的是通过黏合小组件，根据不同的业务需要组合出不同规格的高级组件。
 
