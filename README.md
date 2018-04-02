@@ -182,7 +182,7 @@ let result=react.eval\(...\)**\(\)                                          //re
 
 如果把react.eval 和 dva,redux 比作公司，那么
 
-①dva和redux就是boss绝对掌权，员工只负责按指令展示，完全无脑，发生任何事情都必须通知boss\(dispatch\)，然后层层下发（connect,重绘），boss负责一切思考，包括鸡毛蒜皮的小事。
+①dva和redux就是boss绝对掌权，员工只负责按指令展示，完全无脑\(无状态组件\)，发生任何事情都必须通知boss\(dispatch\)，然后层层下发（connect,重绘），boss负责一切思考，包括鸡毛蒜皮的小事。
 
 ②react.eval 是公司分割成不同的部门，部门下还可以再继续分割子部门，部门内部的事情能自己解决就不用上报\(this.setState\)， 部门之间沟通，直接沟通协调\(react.eval\)，小事不需要通知boss，不需要层层下发，变更直接发生在需要变更的部门。
 
@@ -197,6 +197,4 @@ dva和redux翻倍的代码量本身就是制造bug的根源。jquery，vue这些
 组件应当 为 程序员 服务，极少的配置获取尽可能多的功能。组件存在的目的是为了通过封装组合，尽最大可能不出bug，让经验得以积累，提高效率。
 
 react.eval 的执行方式仿照easyui\(\([http://www.jeasyui.com](http://www.jeasyui.com%29%29\)，存在的目的是为了黏合小组件，根据不同的业务需要组合出不同规格的高级组件。
-
-
 
