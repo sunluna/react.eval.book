@@ -178,7 +178,7 @@ let result=react.eval\(...\)**\(\)                                          //re
 
 **Q:这个组件和redux还有Context API最大的不同是什么**
 
-A:不遵守单一的数据流向，组件状态可根据自己业务需要分散到子组件中自己处理自己的动作，需要交互则通过react.eval，而不是统一到一个store里管理。
+**A:理念**。react.eval不遵守单一的数据流向，组件状态可根据自己业务需要分散到子组件中自己处理自己的动作，需要交互则通过react.eval，而不是统一到一个store里管理。
 
 如果把react.eval 和 dva,redux 比作公司，那么
 
