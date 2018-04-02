@@ -176,3 +176,13 @@ let result=react.eval\(...\)**\(\)                                          //re
 
 ![](/assets/impozzrt.png)
 
+**Q:这个组件和redux还有Context API最大的不同是什么**
+
+A:不遵守单一的数据流向，组件状态可根据自己业务需要分散到子组件中自己处理自己的动作，需要交互则通过react.eval，而不是统一到一个store里管理。
+
+如果把react.eval 和 dva,redux 比作公司，那么
+
+①dva和redux就是boss绝对掌权，员工只负责按指令展示，发生任何事情都必须通知boss\(dispatch 和事件\)，然后层层下发（重绘）。
+
+②react.eval 是公司分割成不同的部门，部门下允许有子部门，发生事情只需要 部门之间沟通，直接通知，小事不需要通知boss，不需要层层下发，变更只发生在部门之间。
+
