@@ -176,11 +176,13 @@ let result=react.eval\(...\)**\(\)                                          //re
 
 ![](/assets/impozzrt.png)
 
-Q:react.eval 和 redux/dva这些兼容性怎么样?
+**Q:react.eval 和 redux/dva这些兼容性怎么样?**
 
 A:可以直接与redux/dva混用，没有冲突。
 
-为了兼容项目使用redux/dva，还对react.eval方法进行了调整适应\(见:**为什么react.eval 返回Promise  而不是 实际返回值**\)。
+甚至为了兼容项目使用redux/dva，还对react.eval方法进行了调整适应\(见:**为什么react.eval 返回Promise  而不是 实际返回值**\)。
+
+可以在 React\(15.x,16.x\)上无缝使用
 
 **Q:react.eval和redux还有Context API最大的不同是什么**
 
@@ -200,5 +202,5 @@ redux和dva并不是所有问题的最佳方案，尤其是在pc端的业务系�
 
 组件存在的意义是通过封装组合，尽最大可能不出bug，让经验得以积累，提高效率，降低成本。
 
-react.eval 存在的价值是以最简单的方式耦合小组件，根据不同的业务需要组合出不同规格的高级组件。
+**react.eval 存在的价值是以最简单的方式耦合小组件，根据不同的业务需要组合出不同规格的高级组件。**
 
