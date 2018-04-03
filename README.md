@@ -176,7 +176,13 @@ let result=react.eval\(...\)**\(\)                                          //re
 
 ![](/assets/impozzrt.png)
 
-**Q:这个组件和redux还有Context API最大的不同是什么**
+Q:react.eval 和 redux/dva这些兼容性怎么样?
+
+A:可以直接与redux/dva混用，没有冲突。
+
+为了兼容项目使用redux/dva，还对react.eval方法进行了调整适应\(见:**为什么react.eval 返回Promise  而不是 实际返回值**\)。
+
+**Q:react.eval和redux还有Context API最大的不同是什么**
 
 **A:理念**。react.eval不遵守单一的数据流向，组件状态可根据自己业务需要分散到子组件中自己处理自己的动作，需要交互则通过react.eval，而不是统一到一个store里管理。
 
