@@ -2,6 +2,8 @@
 
 ## React 组件间通讯\(不使用Context 和 redux\)
 
+**一个组件调用另一个组件内部的方法**
+
 ### **安装**
 
 `npm install react.eval --save`
