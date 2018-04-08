@@ -171,9 +171,11 @@ let result=react.eval\(...\)**\(\)                                          //re
 let result= react('b').changeContent('......');
 ```
 
-![](/assets/import.png)
+![](/assets/import.png)![](/assets/20180408133437.png)
 
 ![](/assets/imposrt.png)
+
+![](/assets/20180408133126.png)
 
 如果结果确实是异步返回结果，例如各种ajax,还可以使用** await/async **改造调用的方法
 
