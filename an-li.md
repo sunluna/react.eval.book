@@ -10,7 +10,7 @@
 
 主管
 
-![](/assets/importmanager.png)
+![](/assets/importManager.png)
 
 测试人员
 
@@ -22,11 +22,21 @@ model
 
 部门
 
-![](/assets/importdep.png)
+![](/assets/importDep.png)
 
 最终效果
 
-![](/assets/showdva.gif)
+![](/assets/tshow.gif)
+
+**这样就实现了 测试人员  向 部门主管请假的目的\(dva版\)。**
+
+---------------------------------------------------------------------------------------------
+
+如果此时 ，测试人员的直接上级发生了变更，其他人向原来的主管请假，测试人员向测试主管请假
+
+
+
+
 
 
 
