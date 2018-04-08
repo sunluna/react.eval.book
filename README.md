@@ -25,18 +25,18 @@ import { react } from 'react.eval';
 https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#readme
 可以这样↓
 */
-// @react.deco //// 简化写法 @react ////^1.4.7
+//@react 
 class BComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       content : 'nothing'
     };
-    /* 构造方法里初始化实例， 简化写法 react(this) ////^1.4.7
-    如果使用了ES7 decorators，就不用在constructor的最后init了
-    装饰器和init任选一种，如果同时使用，则会抛出错误
+    /* 构造方法初始化实例
+    如果使用了ES7 decorators，就不用在constructor初始化
+    装饰器和constructor初始化任选一种，如果同时使用，则会抛出错误
       */
-    react.init(this);
+    react(this);
   }
   // 提供给外界调用的方法
   changeContent = (str) => {
@@ -93,9 +93,8 @@ class AComponent extends React.Component {
     return <p>
       <button onClick={() => {
         /* 在事件方法中 使用 id.方法名 参数1、参数2...方式调用B组件提供的方法
-        也可以简化 react('b.changeContent',Math.random()); ////^1.4.7
         */
-        react.eval('b.changeContent', Math.random());
+        react('b.changeContent', Math.random());
       }}>changeOtherComponent</button>
     </p>;
   }
@@ -114,14 +113,12 @@ import { react } from 'react.eval';
 ##### 需要被外部调用的组件必须在 constructor 中初始化或使用ES7的decorator标注，组件必须是有状态的
 
 ```
-react.init(this); 
-// 1.4.7 版本后简化为
-// react(this);
+react(this);
 /* 如果项目中可以使用ES7的装饰器 
  babel-plugin-transform-decorators-legacy
  https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#readme
- 可以不必在constructor的最后初始化
- 在 class 上方声明 @react.deco 或 @react
+ 则不必在constructor中初始化
+ 在 class 上方声明  @react
  */
 ```
 
@@ -135,7 +132,7 @@ react.init(this);
 
 ```
 react.eval('id.方法名',参数1,参数2...)
-// 1.4.7 版本后简化为 react('id.方法名',参数1,参数2...)
+// 可以简化为 react('id.方法名',参数1,参数2...)
 ```
 
 ##### **注意:**
@@ -158,9 +155,7 @@ A: 在应用了dva、redux 等框架的项目中，dispatch很容易造成大批
 
 **Q:如果我要立刻获得组件方法的返回值，怎么做**
 
-A:^1.4.8 版本后
-
-对于某些需要立即返回数据，不会修改state，并且调用时组件实例必定存在的场景.
+A:对于某些需要立即返回数据，不会修改state，并且调用时组件实例必定存在的场景.
 
 let result=react.eval\(...\)**\(\)                                          //react\(...\)\(\)**
 
