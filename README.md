@@ -165,6 +165,12 @@ let result=react.eval\(...\)**\(\)                                          //re
  let result= react('b.changeContent','......')();
 ```
 
+如果组件实例调用时一定存在，还可以直接获取组件实例
+
+```
+let result= react('b').changeContent('......');
+```
+
 ![](/assets/import.png)
 
 ![](/assets/imposrt.png)
