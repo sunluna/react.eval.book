@@ -1,6 +1,8 @@
 # react.eval
 
-## React 组件间通讯\(不使用Context 和 redux\)
+## React 组件间通讯
+
+### 不使用Context 和 redux
 
 **直接调用组件内部的方法，定向精确更新组件状态**
 
