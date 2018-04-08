@@ -14,7 +14,7 @@
 
 [https://github.com/sunluna/react.eval](https://github.com/sunluna/react.eval)
 
-### 示例
+### 示例（同级组件）
 
 #### 组件B\(被调用\)
 
