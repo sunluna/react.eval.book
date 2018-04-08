@@ -57,7 +57,7 @@ class BComponent extends React.Component {
 export default BComponent;
 ```
 
-#### 父容器
+#### 容器
 
 ```
 import React from 'react';
