@@ -104,6 +104,8 @@ export default AComponent;
 
 ##### ![](/assets/t.gif)
 
+### 步骤
+
 ##### 调用或初始化前需要添加引用
 
 ```
