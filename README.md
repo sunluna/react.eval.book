@@ -193,7 +193,7 @@ A:可以直接与redux/dva混用，没有冲突。
 
 甚至为了兼容项目使用redux/dva，还对react.eval方法进行了调整适应\(见:**为什么react.eval 返回Promise  而不是 实际返回值**\)。
 
-可以在 React\(15.x,16.x\)上无缝使用
+可以在 React\(15.x,16.x\)上无缝使用。
 
 # 附言
 
