@@ -2,7 +2,7 @@
 
 ## React 组件间通讯
 
-### 不使用Context 和 redux
+### 不借助Context 和 redux
 
 **调用任意位置组件内部的方法，定向精确更新组件状态**
 
