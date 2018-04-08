@@ -145,7 +145,7 @@ react.eval('id.方法名',参数1,参数2...)
 
 **Q: 为什么react.eval 返回Promise  而不是 实际返回值**
 
-A: 在应用了dva、redux 等框架的项目中，dispatch很容易造成大批组件重新渲染，
+A: 在应用了dva、redux 等框架的项目中，dispatch会引发组件重新渲染，
 
 在渲染过程中，react.eval 要执行的方法所在的组件实例
 
