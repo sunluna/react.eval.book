@@ -1,6 +1,6 @@
 # react.eval
 
-## React 组件间通讯
+## React 组件间通信
 
 ### 不借助Context 和 redux
 
@@ -16,7 +16,7 @@
 
 [https://github.com/sunluna/react.eval](https://github.com/sunluna/react.eval)
 
-### 示例（同级组件）
+### 示例（同级组件交互）
 
 #### 组件B\(被调用\)
 
