@@ -203,11 +203,11 @@ A: react.eval 实现组件传值调用，借鉴传统的jQuery组件设计风格
 
 **Q:react.eval的适用范围**
 
-A:react.eval 可以做到像dva、redux一样的跨组件通讯。
+A:react.eval 可以做到像dva、redux一样的跨组件通讯，只不过实现原理不同。
 
 如果项目不是整体dva/redux的，react.eval可以承担所有的组件通信需求。
 
-如果项目是dva/redux的，建议只在封装组件和复合组件的时候使用，进行纯技术封装，可以提高组件复用能力。
+如果项目是整体dva/redux的，建议最多只在封装组件和复合组件的时候使用\(或者不用\)，只做纯技术封装，可以提高组件复用能力。
 
 不建议在dva/redux的store和reducers里面出现，以免造成混乱。
 
