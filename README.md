@@ -209,17 +209,13 @@ You组件可以通过属性bossId获得同级组件Manager的id，从而调用Ma
 
 ![](/assets/20180420105817.png)
 
-
-
-
-
 **Q:react.eval兼容性怎么样?**
 
 A:兼容使用redux/dva的项目。_react.eval对此专门进行了调整\(见:**为什么react.eval 返回Promise  而不是 实际返回值**\)。 _
 
 兼容 React\(15.x,16.x\)。
 
-**Q:react.eval的优势有哪些?**
+**Q:react.eval的优势、适用范围（对比dva/redux）**
 
 A: react.eval 实现组件传值调用，借鉴传统的jQuery组件设计风格，代码量少，
 
@@ -231,9 +227,7 @@ A: react.eval 实现组件传值调用，借鉴传统的jQuery组件设计风格
 
 可以以搭积木的方式封装复合组件。API少，方法名好记。
 
-**Q:react.eval的适用范围（对比dva/redux）**
-
-A:react.eval 可以做到像dva、redux一样的跨组件通信，只是更加简单直接。
+react.eval 可以做到像dva、redux一样的跨组件通信，只是更加简单直接。
 
 dva/redux 侧重整体架构清晰简单的数据流通，react.eval注重局部组件沟通和状态递进。
 
