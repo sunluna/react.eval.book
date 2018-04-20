@@ -197,15 +197,19 @@ A:为了组合组件方便。即使不指定id也会强制生成一个随机数�
 
 下图 TCom 组件 组合了 You 和 Manager 组件，
 
-TCom的id在没有指定的情况下可以自动生成
+TCom的id在没有指定的情况下可以自动生成随机数，这样调用多个TCom并且不指定 id 时  不会冲突。
 
-如果指定了属性props的id，TCom的this.id 会被赋值props.id
+如果指定了属性props的id，TCom的props.id会被复制到 this.id
 
 ![](/assets/20180420110421t.png)
 
+![](/assets/20180420105241_.png)
 
+You组件可以通过属性bossId获得同级组件Manager的id，从而调用Manager中的方法。
 
 ![](/assets/20180420105817.png)
+
+
 
 
 
