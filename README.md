@@ -143,7 +143,9 @@ react.eval('id.方法名',参数1,参数2...)
 
 ##### **注意:**
 
-**react.eval 方法的返回值为 Promise对象，如果需要获取实际返回值，需要 react.eval\(...\).then\(\(result\)=&gt;{console.dir\(result\);}\)**
+**① 被@react修饰或构造方法中react\(this\) 的组件，即使不指定id，也会强制生成一个随机数作为id，this.id被占用。**
+
+**②** **react.eval 方法的返回值为 Promise对象，如果需要获取实际返回值，需要 react.eval\(...\).then\(\(result\)=&gt;{console.dir\(result\);}\)**
 
 **Q: 为什么react.eval 返回Promise  而不是 实际返回值**
 
@@ -189,6 +191,24 @@ let result= react('b').changeContent('......');
 
 ![](/assets/impozzrt.png)
 
+**Q:react.eval 在初始化时为什么要强制占用this.id**
+
+A:为了组合组件方便。即使不指定id也会强制生成一个随机数作为id
+
+下图 TCom 组件 组合了 You 和 Manager 组件，
+
+TCom的id在没有指定的情况下可以自动生成
+
+如果指定了属性props的id，TCom的this.id 会被赋值props.id
+
+![](/assets/20180420110421t.png)
+
+
+
+![](/assets/20180420105817.png)
+
+
+
 **Q:react.eval兼容性怎么样?**
 
 A:兼容使用redux/dva的项目。_react.eval对此专门进行了调整\(见:**为什么react.eval 返回Promise  而不是 实际返回值**\)。 _
@@ -207,11 +227,9 @@ A: react.eval 实现组件传值调用，借鉴传统的jQuery组件设计风格
 
 可以以搭积木的方式封装复合组件。API少，方法名好记。
 
-**Q:react.eval的适用范围**
+**Q:react.eval的适用范围（对比dva/redux）**
 
 A:react.eval 可以做到像dva、redux一样的跨组件通信，只是更加简单直接。
-
-如果是整体应用dva/redux 的项目，不建议同一组件混用两种不同的组件通信方式。
 
 dva/redux 侧重整体架构清晰简单的数据流通，react.eval注重局部组件沟通和状态递进。
 
@@ -225,7 +243,23 @@ react.eval 不做统一的状态管理，状态不分离，只负责组件通信
 
 react.eval 专门为有状态组件定制，让有状态组件除了自己能setState，还能调用别的有状态组件提供的方法。
 
-如果不是整体应用dva/redux的项目，react.eval可以承担所有组件通信。
+dva/redux 希望组件只负责界面，逻辑分离到store、reducers、models，与组件沟通用属性传递和事件回调。
+
+react.eval 希望组件除了负责界面，还要封装一些相对固定的业务逻辑，省掉多余的属性传递和事件回调。
+
+dva/redux 无状态组件，需要开放很多事件，没有传入就只是界面。
+
+react.eval 有状态组件，只需要提供少量真正的业务方法，组件拿过来就是完整的一套功能 。
+
+dva/redux 无状态组件组合起来也只是界面，还剩下一大堆的事件回调和属性需要去填充。
+
+react.eval 有状态组件组合起来不仅有界面，还可以内部填充被组合组件需要的属性和回调。
+
+react.eval 被组合组件之间可以直接通信，外部不用关注，组合组件整体需要外部提供的信息更少。
+
+对于应用dva/redux 的项目，不建议同一组件混用两种不同的组件通信方式。
+
+没有应用dva/redux 的项目，react.eval 可以承担 所有 组件通信。
 
 **Q:react.eval 的原理**
 
