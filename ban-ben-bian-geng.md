@@ -1,5 +1,9 @@
 # 版本变更
 
+## 1.4.14
+
+1、修改主方法名为ref，react=&gt;ref。新增refs。
+
 ## 1.4.10
 
 1、增加对forceUpdate的渲染，无API变更。
