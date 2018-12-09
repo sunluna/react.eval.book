@@ -65,3 +65,13 @@ ref('toast.getContent').then((result)=>{
 
 **2、ref.chunk\(newBase\)**
 
+此方法一般不必调用
+
+调用此方法的前提是，必须将react.eval列入CommonChunk列表，即vendor列表，保证react.eval在打包出的js中只有一份。
+
+此方法可以无参调用 ref.chunk\(\)
+
+作用是彻底让react.eval从全局变量里消失，将公共事件池移动到闭包内，防止被找到。
+
+调用位置是 webpack配置entry的入口文件，项目组件ReactDOM.render方法之前.
+
