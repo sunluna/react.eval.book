@@ -33,7 +33,7 @@ import { ref } from 'react.eval';
 
 Q：如何传参？
 
-A: 
+A:
 
 如果已经使用ref\('toast'\)或 refs.toast 方式获得组件实例，则按照正常方式传参即可
 
@@ -47,7 +47,7 @@ toast.show(参数1,参数2,参数3);
 如果使用 ref\('id.methodName'\)
 
 ```
-ref('toast.show',参数1,参数2,参数3 );
+ref('toast.show',参数1,参数2,参数3);
 ```
 
 
