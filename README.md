@@ -52,7 +52,7 @@ class Toast extends React.Component {
   }
   render() {
     const { show } = this.state;
-    return show&&(
+    return show && (
       <div>Hello world!!!</div>
     );
   }
