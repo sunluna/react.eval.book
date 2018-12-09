@@ -69,7 +69,7 @@ export default Toast;
 ...
 ```
 
-3、任意位置调用组件实例
+3、任意位置调用组件实例\([refs.md](/refs.md "更多方式")\)
 
 ```
 import { refs } from 'react.eval';
