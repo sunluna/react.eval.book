@@ -87,7 +87,7 @@ mix方法在实现了$.extend方法所有功能之外，还增强实现了不同
 
 常见用法:
 
-1、mix\(true,{a:1,b:2},{a:3,c:1}\); 
+1、mix\(true,{a:1,b:2},{a:3,c:1}\);
 
 输出  {a: 3, b: 2, c: 1}
 
@@ -155,9 +155,9 @@ mix\(\[true\],\[1,3,4,5,6\],\[2,4\]\)
 
 mix\(\[true\],{a:1,b:\[1,2,3,4,5\],c:{x:1,y:2}},{b:\[5,6\],c:{x:3}}\);
 
-既需要合并，又需要裁剪 
+既需要合并，又需要裁剪
 
-最终需要的结果为 
+最终需要的结果为
 
 {a:1,b:\[5,6\],c:{x:3,y:2}}
 
@@ -177,15 +177,25 @@ var b={x:{a:1,b:2}};
 
 此时 a.x===b.x成立
 
+# 4、listener
 
+import { listener } from 'react.eval';
 
+全局的监听事件池（发布订阅模式），具有以下方法
 
+| 方法名 | 参数 | 描述 |
+| :--- | :--- | :--- |
+| listener.on | ① String,事件key；                               ②Function 事件方法 | 注册事件方法                                               listener.on\('init',\(\)=&gt;{console.log\(1\)}\) |
+| listener.remove;别名listener.off | ① String,事件key； | 删除指定键值的事件下的所有方法            listener.remove\('init'\) |
+| listener.fire,别名 listener.emit | ① String，事件key；②③④...方法参数 | 执行指定键值的事件                                  listener.fire\('init',参数1,参数2...\); |
+| listener.one | 同listener.on | 注册事件，注册之前先清空同键值的其他事件 |
+| listener.once | 同listener.on | 注册事件,被注册的方法执行一次以后就会从该键值的事件列表中移除 |
 
+**注意事项：**
 
+1、事件池通常用来做松耦合
 
+2、listener.fire 方法有返回值，返回值为最后注册的方法的返回值，此处参考了C\#的委托delegate设计
 
-
-
-
-
+3、listener.fire 内部使用了try catch处理，有错误不会被抛出，而是直接忽略掉，然后执行事件列表的下一个方法。设计如此。
 
