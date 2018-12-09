@@ -10,7 +10,7 @@
 
 \([https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy\#readme](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#readme "如何安装?")\)
 
-webpack1.x =&gt;  webpack.config.js
+webpack1.x 配置=&gt;  webpack.config.js
 
 ```
 ...
