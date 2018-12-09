@@ -69,16 +69,16 @@ export default Toast;
 ...
 ```
 
-3、任意位置调用组件
+3、任意位置调用组件实例
 
 ```
 import { refs } from 'react.eval';
 
 ...
     somewhere(){
-    
+
         refs.toast.show();
-        
+
     }
 ...
 ```
