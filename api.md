@@ -28,7 +28,7 @@ import { ref } from 'react.eval';
 
 **需要注意的地方**
 
-1、ref\('id.methodName',参数1,参数2,参数3....\)这种用法，经过了特殊处理，返回值为Promise
+**1、ref\('id.methodName',参数1,参数2,参数3....\)这种用法，经过了特殊处理，返回值为Promise**
 
 原因:
 
@@ -62,4 +62,10 @@ ref('toast.getContent').then((result)=>{
 3\) 如果你对ref\('id.methodName'\)用法的返回值处理感到纠结和厌烦，建议使用refs.id 这种方式来调用组件实例，方法结果不会经过任何处理。
 
 也可以 ref\('id.methodName'\)\(\)  ，就是在调用方法后追加一对小括号，这样就会立刻返回组件实例方法的结果，不经过任何处理。
+
+**2、ref.chunk\(newBase\)**
+
+
+
+
 
