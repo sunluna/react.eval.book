@@ -83,5 +83,7 @@ import { refs } from 'react.eval';
 ...
 ```
 
+# 更多信息请 查阅 [API](/api.md)
+
 
 
