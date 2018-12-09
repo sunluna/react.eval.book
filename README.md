@@ -31,7 +31,7 @@ module:{
 
 #### 快速开始：
 
-1、注册组件
+1、注册组件\([init.md](/init.md "更多")\)
 
 ```
 import React from 'react';
