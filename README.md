@@ -6,7 +6,28 @@
 
 ###### 在react环境下，本组件提供 获得指定id的 react组件实例功能  &lt;Toast id="app" /&gt;
 
-使用本组件需要安装  babel-plugin-transform-decorators-legacy
+##### 使用本组件需要安装  babel-plugin-transform-decorators-legacy
 
- \([https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy\#readme](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#readme "如何安装?")\)
+\([https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy\#readme](https://github.com/loganfsmyth/babel-plugin-transform-decorators-legacy#readme "如何安装?")\)
+
+webpack1.x =&gt;  webpack.config.js
+
+```
+...
+module:{
+    loaders:[
+        {
+            test:/.js[x]?$/,
+            exclude: /node_modules/,
+            loader:'babel-loader',
+            query:{
+                presets:['es2015','react','stage-0'],
+                plugins:['transform-runtime','transform-decorators-legacy']
+            }
+        }
+    ]
+}
+```
+
+
 
