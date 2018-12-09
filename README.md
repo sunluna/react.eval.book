@@ -60,7 +60,7 @@ class Toast extends React.Component {
 export default Toast;
 ```
 
-2、引用组件
+2、引用组件\(\)
 
 ```
 ...
