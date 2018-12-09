@@ -85,5 +85,7 @@ import { refs } from 'react.eval';
 
 # 更多信息请 查阅 [API](/api.md)
 
+# 也可以查看 [原理](/yuan-li.md)
+
 
 
