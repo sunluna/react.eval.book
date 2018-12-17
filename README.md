@@ -36,7 +36,7 @@ module:{
 
 #### 快速开始：
 
-1、注册组件\([init.md](/init.md "更多")\)
+1、注册组件\([相关](/init.md)\)
 
 ```
 import React from 'react';
@@ -65,7 +65,7 @@ class Toast extends React.Component {
 export default Toast;
 ```
 
-2、引用组件\([ref.md](/ref.md "更多")\)
+2、引用组件\([相关](/ref.md)\)
 
 ```
 ...
@@ -74,7 +74,7 @@ export default Toast;
 ...
 ```
 
-3、任意位置调用组件实例\([refs.md](/refs.md "更多方式")\)
+3、任意位置调用组件实例\([更多方式](/refs.md)\)
 
 ```
 import { refs } from 'react.eval';
