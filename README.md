@@ -5,7 +5,8 @@
 
 ## React 组件间通信\(调用指定id的react组件实例\)
 
-#### 我们都知道 document.getElementById\('app'\) 可以用来获得 id 为 app 的dom元素<br/> `<div id="app"></div>`
+#### 我们都知道 document.getElementById\('app'\) 可以用来获得 id 为 app 的dom元素<br/> 
+`<div id="app"></div>`
 
 #### 在react环境下，本组件提供获得指定id的react组件实例功能  `<Toast id="toast" />`;
 
