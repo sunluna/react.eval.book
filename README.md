@@ -8,7 +8,7 @@
 #### 我们都知道 document.getElementById\('app'\) 可以用来获得 id 为 app 的dom元素<br/> 
 `<div id="app"></div>`
 
-#### 在react环境下，本组件提供获得指定id的react组件实例功能 
+#### 在react环境下，本组件提供获得指定id的react组件实例功能 refs.toast
  `<Toast id="toast" />`;
 
 #### 使用本组件需要安装  babel-plugin-transform-decorators-legacy
