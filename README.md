@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 # react.eval
 
 ## React 组件间通信\(调用指定id的react组件实例\)
