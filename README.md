@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html>
+<body>
 # react.eval
 
 ## React 组件间通信\(调用指定id的react组件实例\)
@@ -87,6 +89,6 @@ import { refs } from 'react.eval';
 # 更多信息请 查阅 [API](/api.md)
 
 # 也可以查看 [原理](/yuan-li.md)
-
-
+</body>
+</html>
 
