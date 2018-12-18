@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+
 # 1、refs对象
 
 import { refs } from 'react.eval';
@@ -199,3 +203,5 @@ import { listener } from 'react.eval';
 
 3、listener.fire 内部使用了try catch处理，有错误不会被抛出，而是直接忽略掉，然后执行事件列表的下一个方法。设计如此。
 
+</body>
+</html>

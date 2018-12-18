@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<body>
+
 # 关于 id
 
 引用组件时，推荐  &lt;Toast id="toast" /&gt; , 即使用 属性id 。
@@ -34,5 +38,8 @@ class Toast extends React.Component {
 export default Toast;
 ```
 
+
+</body>
+</html>
 
 
