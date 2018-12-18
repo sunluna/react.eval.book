@@ -10,15 +10,7 @@ import { refs } from 'react.eval';
 
 `refs.toast.show();`
 
-请确保调用时组件实例已存在并且id匹配
-
-
-```
-<Toast id='toast'/>
-```
-
-
-
+请确保调用时组件实例已存在并且id匹配 `<Toast id='toast'/>`
 
 注: refs对象并不存在于全局对象上，而是分散在各处引用的闭包内部，通过发布订阅模式维持refs对象为最新的实例id引用集合。
 
